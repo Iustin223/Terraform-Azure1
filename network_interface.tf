@@ -11,3 +11,5 @@ resource "azurerm_network_interface" "example" {
     public_ip_address_id          = azurerm_public_ip.pip[count.index].id
   }
 }
+
+#comentariu test 
