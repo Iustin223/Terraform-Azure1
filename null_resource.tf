@@ -1,4 +1,7 @@
 resource "null_resource" "ping" {
+  triggers = {
+    always_run = "${timestamp()}"
+  }
   provisioner "remote-exec" {
     connection {
       type = "ssh"
