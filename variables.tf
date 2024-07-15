@@ -1,7 +1,7 @@
 variable "vm_count" {
   description = "Number of virtual machines to create"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "vm_size" {
@@ -13,7 +13,5 @@ variable "vm_size" {
 variable "vm_image" {
   description = "Image SKU for the virtual machines"
   type        = string
-  default     = "22_04-lts"
+  default     = "18.04-LTS"
 }
-
- 
