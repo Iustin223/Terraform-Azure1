@@ -30,3 +30,8 @@ output "acr_admin_password" {
   value       = azurerm_container_registry.acr.admin_password
   sensitive   = true
 }
+
+output "nginx_url" {
+  description = "URL nginx "
+  value = [for ip in azurerm_public_ip.pip[*].ip_address : "http://${ip}"]
+ }
