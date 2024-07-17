@@ -1,6 +1,5 @@
 resource "azurerm_linux_virtual_machine" "vm" {
-  count = var.vm_count
-  name                            = "masina-virtuala-${count.index}"
+  name                            = "masina-virtuala-docker"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
   size                            = "Standard_F2"
@@ -8,7 +7,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   admin_password                  = random_password.vm_password.result
   disable_password_authentication = false
   network_interface_ids = [
-    azurerm_network_interface.example[count.index].id,
+    azurerm_network_interface.example[0].id,
   ]
 
   os_disk {
