@@ -18,3 +18,5 @@ provider "azurerm" {
   features {}
 
 }
+#github actions 
+#cum sa configurezi un runner
