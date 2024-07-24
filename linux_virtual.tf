@@ -7,7 +7,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   admin_password                  = random_password.vm_password.result
   disable_password_authentication = false
   network_interface_ids = [
-    azurerm_network_interface.example[0].id,
+    azurerm_network_interface.ni[0].id,
   ]
 
   os_disk {

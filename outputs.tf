@@ -11,7 +11,7 @@ output "vm_public_ips" {
 
 output "vm_private_ips" {
   description = "Adresele ip private ale masinilor virtuale"
-  value       = azurerm_network_interface.example[*].ip_configuration[0].private_ip_address
+  value       = azurerm_network_interface.ni[*].ip_configuration[0].private_ip_address
 } 
 
 output "acr_login_server" {
