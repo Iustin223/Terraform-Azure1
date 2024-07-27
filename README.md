@@ -1,6 +1,6 @@
 # Terraform Azure Infrastructure with Docker and Nginx
 
-This repository contains Terraform code to provision an Azure infrastructure, including a virtual machine with Docker installed, and deploy an Nginx container from a custom Docker image stored in Azure Container Registry.
+This repository contains Terraform code to provision an Azure infrastructure, including a virtual machine with Docker installed, and deploy an Nginx container from a custom Docker image stored in Azure Container Registry.In a previous commit I created 2 virtual machines that would send a ping from the first virtual machine to the other and vice versa.
 
 ## Prerequisites
 
@@ -19,3 +19,7 @@ Clone this repository to your local machine using the following command:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+## Work in progress
+
+- to use pipelines for automation 
